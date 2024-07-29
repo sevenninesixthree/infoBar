@@ -21,6 +21,6 @@ int main(){
   for(i=0;i<sizeof(level)/sizeof(int);i++)
     if(current>level[i])break;
 
-  printf("%d%s |",current,icons[state][i]);
+  printf("%d%s | ",current,icons[state][i]);
   return 0;
 }

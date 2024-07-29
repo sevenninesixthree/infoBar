@@ -1,6 +1,6 @@
 hour=$(date +%H)
 icon=
-if [ 6 -le $hour -a $hour -le 18 ]
+if [ 6 -le $hour -a $hour -le 17 ]
 then
   icon=
 fi

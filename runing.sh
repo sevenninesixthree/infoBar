@@ -1,3 +1,4 @@
+cd $(dirname $0)
 ./obv.sh
 
 Amin=60

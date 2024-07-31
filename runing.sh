@@ -1,8 +1,9 @@
 cd $(dirname $0)
 ./obv.sh
 
-Amin=60
+Amin=10
 seconds=$(date +%S)
+seconds=`expr $seconds % $Amin`
 seconds=`expr $Amin - $seconds`
 seconds=`expr $seconds % $Amin`
 
@@ -17,5 +18,5 @@ sleep $nano
 
 while true; do
   ./obv.sh
-  sleep 1m
+  sleep $Amin
 done
